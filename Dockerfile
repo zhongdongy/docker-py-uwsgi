@@ -16,7 +16,7 @@ WORKDIR /app
 # 安装必要的软件
 # ==
 # 1. OpenResty + uwsgi
-RUN apt-get update && apt-get -y install --reinstall build-essential wget gnupg vim net-tools
+RUN apt-get update && apt-get -y install --reinstall build-essential wget gnupg vim net-tools g++
 RUN wget -O - https://openresty.org/package/pubkey.gpg | apt-key add -
 RUN echo "deb http://openresty.org/package/ubuntu focal main" \
   | tee /etc/apt/sources.list.d/openresty.list
