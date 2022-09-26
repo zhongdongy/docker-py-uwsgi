@@ -16,6 +16,7 @@ Software/Libraries included:
 
 ### Usage
 
-Please refer to this [demo repository](https://github.com/zhongdongy/docker-py-uwsgi-demo) for information.
-
 You will need to override the `/app/uwsgi.yml` file to suits your need.
+
+Your uWSGI application needs to listen on port 5000 in order to receive default port forwarding from OpenResty. If you 
+prefer a different port, please replace `/usr/local/openresty/nginx/sites/main.conf`, which forwards 8080 to 5000 (uWSGI).
