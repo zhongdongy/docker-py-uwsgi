@@ -1,5 +1,5 @@
 #
-# 用于构建使用 Supervisord 和 uWSGI 的 Flask 基础包（基于 Python 3.10）
+# 用于构建使用 Supervisord 和 uWSGI 基础包（基于 Python 3.10）
 #
 # Author: Zhongdong Yang
 # Email: zhongdong_y@outlook.com
