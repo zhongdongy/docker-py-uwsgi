@@ -7,7 +7,7 @@
 # Date: 2022-09-26
 #
 
-FROM dongsxyz/python-supervisord:latest
+FROM dongsxyz/python-supervisord:ubuntu
 USER root
 
 WORKDIR /app
