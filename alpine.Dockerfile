@@ -27,6 +27,7 @@ RUN python3 -m pip install uwsgi
 COPY uwsgi.yml /app/uwsgi.yml
 COPY config/uwsgi-alpine.conf /app/_supervisor.d/uwsgi.conf
 COPY config/nginx/nginx.conf /etc/nginx/nginx.conf
+RUN mkdir -p /var/tmp/nginx/
 
 # 为了与基于 Ubuntu 的镜像兼容，这里不再修改目录
 COPY config/nginx/sites /usr/local/openresty/nginx/sites
