@@ -25,7 +25,7 @@ RUN python3 -m pip install uwsgi
 
 # OpenResty
 COPY uwsgi.yml /app/uwsgi.yml
-COPY config/uwsgi.conf /app/_supervisor.d/uwsgi.conf
+COPY config/uwsgi-alpine.conf /app/_supervisor.d/uwsgi.conf
 COPY config/nginx/nginx.conf /etc/openresty/openresty.conf
 
 # 为了与基于 Ubuntu 的镜像兼容，这里不再修改目录
