@@ -16,8 +16,7 @@ WORKDIR /app
 # 安装必要的软件
 # ==
 # 1. OpenResty + uwsgi
-RUN echo "https://mirrors.tuna.tsinghua.edu.cn/alpine/edge/testing" >> /etc/apk/repositories
-RUN apk -U add openresty build-base linux-headers pcre-dev python3-dev=3.10.8-r1
+RUN apk -U add openresty python3-dev=3.10.8-r1
 RUN python3 -m pip install uwsgi
 
 # ==
