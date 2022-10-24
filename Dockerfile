@@ -21,7 +21,7 @@ RUN wget -O - https://openresty.org/package/pubkey.gpg | apt-key add -
 RUN echo "deb http://openresty.org/package/ubuntu focal main" \
   | tee /etc/apt/sources.list.d/openresty.list
 RUN apt-get update && apt-get -y install openresty
-RUN python3 -m pip install uwsgi
+RUN /usr/bin/python3 -m pip install uwsgi
 
 # ==
 # 更新配置文件并复制代码文件
