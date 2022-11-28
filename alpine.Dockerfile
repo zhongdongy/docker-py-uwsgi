@@ -1,10 +1,10 @@
 #
-# 用于构建使用 Supervisord 和 uWSGI 基础包（基于 Python 3.10）
+# 用于构建使用 Supervisord 和 uWSGI 基础包（基于 Python 3.11）
 #
 # Author: Zhongdong Yang
 # Email: zhongdong_y@outlook.com
 # Copyright: Zhongdong Yang
-# Date: 2022-09-26
+# Date: 2022-11-29
 #
 
 FROM dongsxyz/python-supervisord:alpine
@@ -16,7 +16,7 @@ WORKDIR /app
 # 安装必要的软件
 # ==
 # 1. OpenResty + uwsgi
-RUN apk -U add openresty python3-dev=3.10.8-r1
+RUN apk -U add openresty
 RUN python3 -m pip install uwsgi
 
 # ==
